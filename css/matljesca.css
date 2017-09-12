@@ -1,0 +1,1445 @@
+html{
+    height:100%;
+    width: 100%;
+}
+
+
+body{
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    height:100%;
+    width: 100%;
+
+}
+
+header{
+    background-color: #a90f64;
+    clear: both;
+    border-left: 175px solid #a90f64;
+    text-align: center;
+    overflow: hidden;
+    height: 50px;
+    z-index: 5;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    padding: 3px;
+}
+
+header h1{
+    font-size: large;
+    margin: 10px;
+    text-transform: uppercase;
+    float: none;
+    padding: 3px 0 3px 4px ;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-align: left;
+
+}
+
+#menu_button{
+    color: white;
+    float: left;
+    margin: 7px 10px auto 10px;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#menu_button1 {
+    font-size: 26px;
+
+}
+
+#logout{
+    color: white;
+    float: left;
+    margin: 7px 10px auto 10px;
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#logoutI {
+    font-size: 26px;
+
+}
+
+#profilePic{
+    color: #a90f64;
+    float: left;
+    margin: 7px 10px 5px 10px;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+#profilePic p{
+    float: left;
+    color: #a90f64;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    margin: 7px 5px ;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+
+#leti{
+    position: fixed;
+    top: 20px;
+    left: 45px;
+    height: 80px;
+    width: 80px;
+    z-index: 5;
+   }
+
+#leti1{
+    height: 80px;
+    width: 80px;
+
+}
+
+header img{
+
+    vertical-align: middle;
+    float: left;
+}
+header figure{
+    margin: 0;
+    height: 100px;
+    width: 368px;
+    float: left;
+}
+
+section{
+    margin: 20px 0 0 205px;
+    padding: 2em;
+    overflow: hidden;
+    min-height: 80%;
+
+}
+
+footer{
+    background-color: #a90f64;
+    clear: both;
+    text-align: center;
+    padding: 3px;
+    border-left: 165px solid #a90f64;
+    position: absolute;
+    bottom: 0;
+}
+
+footer figure{
+    display: inline-block;
+}
+
+nav{
+    color: #666666;
+    position: fixed;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 180px;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.93);
+    z-index: 3;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+
+
+}
+
+nav li a {
+    line-height: 20px;
+    display: list-item;
+    padding: 11px 12px 11px 12px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 14px;
+
+    vertical-align: middle;
+
+
+}
+
+
+#nav1{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav2{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav3{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav4{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav5{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav6{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav7{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+
+#nav8{
+    font-size: medium;
+    position: relative;
+    top:2px;
+    margin-right: 18px;
+}
+nav li:first-child {
+    margin-top: 130px;
+}
+
+
+nav li a:hover {
+    background-color: rgba(199, 41, 112, 0.28);
+    color: white;
+}
+
+.aktivni{
+    background-color: #880E4F;
+    color: white;
+}
+
+
+.sekcija  img {
+    width: 200px;
+    height: 200px;
+}
+
+.sekcija ul {
+    float: left;
+}
+
+.proizvodi_sekcija {
+    float: left;
+    margin-left: 0;
+    margin-top: 0;
+    border-left: hidden;
+    padding: 0;
+
+}
+
+.proizvodi_sekcija article{
+    float: left;
+    overflow-wrap: break-word;
+    overflow: visible;
+    margin: 15px;
+    max-width: 240px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    text-transform: capitalize;
+}
+
+.kartica{
+    overflow-wrap: break-word;
+    overflow: hidden;
+    margin: 15px;
+    min-width: 150px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.proizvodi_sekcija  img {
+     //box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+     max-height: inherit;
+     max-width: inherit;
+     clear: left;
+}
+.proizvodi_sekcija figure{
+    margin: 0;
+}
+
+.proizvodi_sekcija div{
+    margin: 0 15px;
+    min-width: 150px;
+    padding-top: 5px;
+    max-width: 750px;
+}
+
+.proizvodi_sekcija p{
+    overflow: hidden;
+
+
+}
+/*webkit-input-placeholder korsiti se za uređenje placehodler-a što je traženo u dokumentaciji zaadaće*/
+::-webkit-input-placeholder  {
+    color: #555555;
+    font-style: italic;
+}
+
+
+
+.reg_form{
+    max-width: 350px;
+    position: relative;
+    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 3px;
+    margin: 0;
+}
+
+.reg_form label{
+    float: left;
+}
+
+.reg_form input, textarea{
+    float: right;
+    border-color: transparent;
+    border-bottom-color: black ;
+
+
+}
+
+input:focus,textarea:focus {
+    outline: 0;
+    border-bottom-color: #E91E63;
+}
+
+#lozinka_p:focus{
+    outline: 0;
+    border-bottom-color: #E91E63;
+}
+
+#koris:focus{
+    outline: 0;
+    border-bottom-color: #E91E63;
+}
+
+
+.reg_form p{
+    padding: 10px;
+    overflow: hidden;
+
+}
+#labela_radio{
+    float: right;
+}
+
+#nelabela_radio{
+    float: right;
+}
+
+#lab_koris{
+    float: left;
+}
+
+#lab_lozinka_p{
+    float: left;
+}
+
+#lab_rad{
+    float: left;
+}
+
+#koris{
+     float: right;
+     border-color: transparent;
+     border-bottom-color: black ;
+ }
+#koris2{
+    float: right;
+    border-color: transparent;
+    border-bottom-color: black ;
+}
+
+#lozinka_p{
+    float: right;
+    border-color: transparent;
+    border-bottom-color: black ;
+}
+
+#rad{
+    float: right;
+    border-color: transparent;
+    border-bottom-color: black ;
+}
+
+#rada{
+    float: right;
+    border-color: transparent;
+    border-bottom-color: black ;
+}
+
+.gumb_prijava{
+    margin-top: 20px;
+    float: right;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #E91E63;
+    color: white;
+
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    display: block;
+}
+
+#ikona{
+    font-size: medium;
+    position: relative;
+    top: 3px;
+    left: -15px;
+}
+
+#ikona1{
+    font-size: medium;
+    position: relative;
+    top: 3px;
+    left: -15px;
+}
+
+.form_gumb button{
+    margin-top: 20px;
+    float: right;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    background: #E91E63;
+    color: white;
+    padding: 8px 30px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.form_gumb button:active{
+    background-color: #6c3b81;
+}
+
+#novip_gumb_desno{
+
+    clear: right;
+}
+#novip_gumb_lijevo{
+
+    float: left;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 150px;
+}
+input[type=range]:focus {
+    outline: none;
+}
+/*set za uređivanje slider-a na skripti novi_proizvod.php*/
+/*POČETAK*/
+input[type=range]::-webkit-slider-runnable-track {
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+    background: #747574;
+    border-radius: 10px;
+
+}
+input[type=range]::-webkit-slider-thumb {
+    height: 13px;
+    width: 13px;
+    border-radius: 22px;
+    background: #E91E63;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -4px;
+}
+/*KRAJ*/
+
+
+#out_slider_novip{
+    margin-left: 5px;
+}
+
+#labela_check_kategorija1{
+     float: right;
+}
+#labela_check_kategorija2{
+    float: right;
+}
+#labela_check_kategorija3{
+    float: right;
+}
+
+@media only screen and ( max-width: 480px ) {
+
+    body{
+        font-family: sans-serif, Helvetica, Roboto;
+        font-size: 8px;
+        align-content: center;
+        width: 100%;
+
+
+    }
+
+    header{
+        margin-top: 0;
+        border-left: 0;
+        text-align: center;
+        padding: 0 0 10px 0;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .proizvodi_sekcija{
+        width: 95%;
+        margin-top: 30px;
+    }
+
+    .proizvodi_sekcija article{
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .proizvod_div img{
+        width: 80px;
+        height: 80px;
+    }
+
+    #menu_button{
+        display: none;
+    }
+
+    #leti{
+        float: none;
+        margin: 0 auto;
+        position: static;
+    }
+    #logo_pod{
+        width: 300px;
+        height: 80px;
+    }
+
+    #logo{
+        width: 300px;
+        height: 80px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    header h1{
+        width: 200px;
+        height: 30px;
+        padding: 0;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    header img{
+        float: none;
+    }
+
+    header figure{
+        margin-left: auto;
+    }
+
+    nav{
+        top: 0;
+        min-width: 100%;
+        align-items: center;
+        text-align:center;
+        height: auto;
+        position: relative !important;
+        z-index: 3;
+    }
+
+    #nav1{
+        display: none;
+    }
+
+    #nav2{
+        display: none;
+    }
+
+    #nav3{
+        display: none;
+    }
+
+    #nav4{
+        display: none;
+    }
+
+    #nav5{
+        display: none;
+    }
+
+    #nav6{
+        display: none;
+    }
+
+    section{
+
+     margin-top: 150px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+    .reg_form{
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    nav li:first-child {
+        margin-top: 0;
+    }
+
+    img#profilna {
+        display: none;
+    }
+
+    nav ul  {
+        align-self: center;
+        min-width: 100%;
+
+
+    }
+
+
+
+    .proizvodi_sekcija div{
+        height: auto;
+        padding: 15px;
+    }
+    .reg_form{
+        width: auto;
+        min-width: 250px;
+
+    }
+    footer{
+        border-left: 0;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+
+    footer img{
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+    article{
+        width: 190px;
+        min-height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img{
+        height: 100px;
+        width: 100px;
+    }
+
+    #glavni{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+}
+
+@media only screen and ( max-width: 1024px ) and (min-width: 480px) {
+    body{
+        font-size: 13px;
+        font-family:  sans-serif, Roboto, serif ;
+    }
+    nav li a{
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+    body{
+        font-family: Roboto, sans-serif;
+        font-size: 15px;
+    }
+
+
+
+    #slika1{
+        position: relative;
+        top: 0;
+        left: 40px;
+    }
+    #slika2{
+        position: relative;
+        top: 0;
+        left: -10px;
+    }
+    #slika3{
+        position: relative;
+        top: 0;
+        left: -60px;
+    }
+    /*transform se koristi za nativno povećanje slike kako bi dobili lijepši prijelaz kod isticanja slike u prvom planu
+     što je po dokumentaciji zadaća_01 na skripti proizvod.php
+      */
+    .proizvod_div img:hover{
+        z-index: 1;
+        -webkit-transform: scale(1.1);
+    }
+
+
+}
+
+table, td, th {
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    max-width: 80%;
+    color: #757575;
+}
+
+tr{
+    max-height: 44px;
+    overflow: scroll;
+
+}
+
+th, td {
+
+    white-space: nowrap;
+    height: 25px;
+    max-height: 25px;
+    width: 30px;
+
+    padding: 15px;
+    border-left: none;
+    border-right: none;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+thead{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+table tr:hover td {
+    background-color: #f5f5f5;
+}
+
+.drugi:active {
+    white-space: normal;
+}
+
+textarea{
+    max-height: 40px;
+    max-width: 180px;
+    border-bottom-width: 2px;
+}
+
+.proizvod {
+    float: left;
+    margin: 0 0 20px 0;
+    border-left: hidden;
+    padding: 0;
+
+}
+
+
+.proizvod  img {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    max-height: inherit;
+    max-width: inherit;
+
+}
+.proizvod  figure {
+    padding-top: 10px;
+    margin: 0;
+}
+
+.proizvod_div{
+    max-width: 800px;
+    max-height: 800px;
+    margin: 15px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.proizvod_div figure{
+    margin: 0;
+}
+
+.proizvod_lista{
+    max-width: 640px;
+    margin: 15px;
+    min-width: 150px;
+    padding: 15px 25px 15px 15px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+
+.proizvod_lista dt{
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.proizvod_lista dd{
+    padding-left: 20px;
+}
+
+.proizvod_div img{
+    float: left;
+    color: black;
+    text-decoration: none;
+    overflow: hidden;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1100px){
+    .sedmi{
+        display: none;
+    }
+}
+@media only screen and (max-width: 900px){
+    .sesti{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .peti{
+        display: none;
+    }
+}
+@media only screen and (max-width: 650px){
+    .cetvrti{
+        display: none;
+    }
+}
+@media only screen and (max-width: 350px){
+    .treci{
+        display: none;
+    }
+}
+@media only screen and (max-width: 250px){
+    .drugi{
+        display: none;
+    }
+}
+
+.drugi{
+    text-align: justify;
+}
+
+
+table a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h6{
+    display: none;
+}
+
+.glavni{
+    float: left;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    margin: 15px;
+    width: 780px;
+    height: 200px;
+    background-color: #FFFFFF;
+    box-shadow: 0 14px 28px rgba(181, 15, 74, 0.25), 0 10px 10px rgba(172, 21, 70, 0.25);
+}
+
+.glavni figure{
+    margin: 0;
+}
+
+.glavni ul{
+    margin-left: 30px;
+}
+
+.glavni ul li{
+    margin: 3px 0 3px 0;
+    padding: 5px;
+    list-style: none;
+    font-size: 16px;
+
+}
+
+.kartica_slika{
+    height: 240px;
+    width: 200px;
+}
+
+.kartica_slika a{
+    text-decoration: none;
+    color: #fff7fe;
+}
+
+.kartica_slika figure{
+    margin: 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+
+}
+
+.kartica_slika h2{
+    font-size: medium;
+    overflow: hidden;
+    padding: 20px 15px;
+    background: #a90f64;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+    margin: 0;
+    position: relative;
+    top: -5px;
+    left: -5px;
+    width: 180px;
+
+}
+
+.kartica_slika h2:hover{
+    box-shadow: 0 6px 12px rgba(0,0,0,.16), 0 6px 12px rgba(0,0,0,.23);
+
+}
+
+#error0{
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    width: 210px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error1{
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    width: 90px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error2{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    width: 175px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error3{
+    position: absolute;
+    top: 205px;
+    left: 350px;
+    width: 75px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error4{
+    position: absolute;
+    top: 265px;
+    left: 350px;
+    width: 90px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error5 {
+    position: absolute;
+    top: 325px;
+    left: 350px;
+    width: 90px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+}
+
+#error6{
+    position: absolute;
+    top: 385px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error7{
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#error8{
+    position: absolute;
+    top: 65px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#error9{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#error10{
+    position: absolute;
+    top: 175px;
+    left: 350px;
+    width: 170px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#error11{
+    position: absolute;
+    top: 230px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#error12{
+    position: absolute;
+    top: 285px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#error13{
+    position: absolute;
+    top: 340px;
+    left: 350px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+#link{
+    position: absolute;
+    top: 500px;
+    left: 250px;
+    width: 155px;
+    height: 13px;
+    font-size: 10px;
+    z-index: 20;
+    display: none;
+    background: rebeccapurple;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.23);
+}
+
+
+#cookie{
+    display: none;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.31);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+#cookieInput{
+    width: 40px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+    font-size: 40px;
+}
+
+#cookieText{
+    margin-top: 50%;
+}
+
+#twoStep{
+    display: none;
+    z-index: 30;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.31);
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+#twoStepInput{
+    width: 40px;
+    height: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor:pointer;
+    font-size: 40px;
+}
+
+#twoStepText{
+    margin-top: 50%;
+}
+
+#unosTwoStep{
+
+}
+
+.boxTpl{
+    width: 240px;
+    height: 100px;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+    margin: 0;
+    padding-top: 30px;
+
+}
+
+.proizvodi_sekcija h2{
+    margin: 10px 0 5px 0;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.indexKartica{
+    border-radius: 2px;
+}
+
+.indexKartica div{
+      padding-bottom: 10px;
+
+
+  }
+
+.indexKartica p{
+    margin-top: 0;
+}
+
+#btnCloseModal{
+    margin-top: 20px;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #E91E63;
+    color: white;
+    padding: 4px 20px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+#save{
+    margin-top: 20px;
+    float: right;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #E91E63;
+    color: white;
+    padding: 4px 20px 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#addRow:hover{
+    color: #E91E63;
+    background-color: inherit;
+}
+
+#catToSer select{
+    float: right;
+}
+
+.notifications-wrapper{
+    color: #666666;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(28, 28, 28, 0.0);
+    z-index: 5;
+
+}
+.notifications-wrapper div{
+    min-height: 50px;
+    background-color: white;
+    margin: 10px;
+    opacity: 0;
+
+}
+.notifications-wrapper i{
+    text-align: center;
+    width: 20%;
+    float: left;
+    margin-top: 13px;
+    border-radius: 2px;
+
+}
+.notifications-wrapper p{
+    width: 80%;
+    float: left;
+
+}
+
+.fancybox-slide>* {
+    max-width: 90%;
+    overflow-x: scroll;
+}
+
+i:active{
+    color: red;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#img, #pdf{
+    margin-left: 10px;
+     float: right;
+     border: none;
+     outline:none;
+     cursor: pointer;
+     background: #E91E63;
+     color: white;
+     padding: 8px 30px 10px;
+     border-radius: 2px;
+     font-size: 12px;
+     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+ }
+
+#img:focus,
+#img:hover,#pdf:focus,
+#pdf:hover  {
+    background-color: rebeccapurple;
+}
+
+.materialButton{
+    margin: 0 5px 10px 10px;
+    padding: 0 16px;
+    background: transparent;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #a90f64;
+    float: right;
+    line-height: 32px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    vertical-align: middle;
+    cursor: pointer ;
+}
+.materialButton:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+#dokumentacija{
+    clear: left;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    margin-top: 40px;
+    padding: 15px;
+    width: 500px;
+    background-color: #ffffff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#dokumentacija p{
+    margin-top: 5px;
+}
+
+#dokumentacija h3{
+    margin-bottom: 5px;
+}
+
+#dokumentacija h1{
+    color: #a90f64;
+}

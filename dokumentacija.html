@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html lang="hr":>
+<head>
+    <title>Era dijagram</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="Era dijagram">
+    <meta name="keywords" content="WebDiP,html,css,prva_vjezba">
+    <meta name="author" content="Matija Ljescanin">
+    <meta name="date" content="07/03/2017">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/matljesca.css">
+    <link rel="icon" type="img/ico" href="img/fav.ico">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+    <figure id="leti" >
+        <img id="leti1" src="img/material.png" alt="logo" usemap="#Map">
+        <figcaption></figcaption>
+
+    </figure>
+    <map name="Map" id="Map">
+        <area alt="Lijevo" title="Lijevo" href="index.html" shape="rect" coords="0,0,40,80" />
+        <area alt="Desno" title="Desno" href="index.html" shape="rect" coords="0,0,80,80" target="a" />
+    </map>
+    <button id="menu_button" ><i id="menu_button1" class="material-icons">menu</i></button>
+
+    <h1>Dokumentacija</h1>
+</header>
+
+<nav class="nav">
+    <ul>
+        <li id="nav0" class="aktivni"><strong><a href="./index.php" > <i id="nav1" class="material-icons">home</i>Početna</a></strong></li>
+        <li id="nav1"><a href="./o_autoru.html"> <i id="nav2" class="material-icons">add_shopping_cart</i>O Autoru</a></li>
+        <li id="nav2"><a href="./dokumentacija.html"> <i id="nav3" class="material-icons">view_list</i>Dokument</a></li>
+        <li id="nav3"><a href="./prijava.php"> <i id="nav4" class="material-icons">group</i>prijava</a></li>
+        <li id="nav5"><a href="./registracija.php"> <i id="nav6" class="material-icons">group_add</i>Registracija</a></li>
+
+    </ul>
+</nav>
+
+
+<section class="sekcija">
+    <h6>.</h6>
+    <div style="float: left;" class="kartica_slika">
+        <a href="img/era_diag.png" target="a">
+            <figure>
+                <img src="./img/era_diag_thumb.png" alt="CSS3" >
+                <figcaption></figcaption>
+            </figure>
+            <h2>Era dijagram</h2>
+        </a>
+    </div>
+    <div style="float: left; margin-left: 30px;" class="kartica_slika">
+        <a href="img/era_diag.png" target="a">
+            <figure>
+                <img src="./img/navi_diag_thumb.png" alt="CSS3" >
+                <figcaption></figcaption>
+            </figure>
+            <h2>navigacijski dijagram</h2>
+        </a>
+    </div>
+
+    <div id="dokumentacija">
+
+        <h1>Opis projektnog zadatka</h1>
+
+            <p>
+            Glavna zadaća projektnog zadatka je bila simulacija više wellnesa gdje se
+                 korisnici mogu registrirati i rezervirati termine. Projketno rješenje se sastojala od 4 vrste korisnika.
+            </p>
+
+            <h3>Administrator</h3>
+            <p>Koji ima sva prava izmjena lozinki, ključanja i otključavanja korisnika,
+                mijenjanja virtualnog vremena, dodavanja novih kategorija te moderatora u iste, gledati statistike i slično.
+            </p>
+
+            <h3>Moderator</h3>
+            Koji ima pravo odbiti i prihvatiti rezervaciju koja je zatražena u njegovoj kategoriji, dodavati
+            nove usluge u kategoriju, pregledavati koje su rezervacije i slično.
+
+            <h3>Registrirani korisnik</h3>
+            <p>Koji ima sva prava rezervirati uslugu u wellnesu gdje se registrirao te prihvatiti
+                ili odbiti rezervaciju termina koji je već zatražen. Ima opciju gledanja svojeg profila    </p>
+
+        <h3>Neregistrirani korisnik</h3>
+            <p>Jeidno pravo koje korisnik kao takav ima je prijaviti se u sustav, registrirati
+                se te vidjeti koje sve kategorije postoje u sustavu.
+            </p>
+            <p>
+            Korišteni alati
+            </p>
+            <ul>
+                <li>IntelliJ IDEA</li>
+                <li>Google Chrome</li>
+                <li>Firefox Mozilla</li>
+                <li>Opera</li>
+                <li>dbForge for MySQL</li>
+            </ul>
+
+
+        <h1>PHP scripts</h1>
+        <h3>admCoupon.php</h3>
+        <p>
+            Skripta služi za prikaz forme koja administratoru služi kao alat za unos novih kupona
+            , a u samoj skripti pomoću smarty template-a generiramo html prikaz, u kojemu
+            skočni izbornik punimo uz pomoć SQL upita dok sav ostali data handle odrađuje
+            javascript skripta userCheck.js (pogledaj userCheck.js dokumentaciju).
+        </p>
+        <h3>admCreateCategory.php</h3>
+        <p>
+            Ovom se skriptom koristi administrator kod kreiranja nove kategorije i dodjele moderatora
+            trenutnoj kategoriji. Skripta prikazuje HTML formu u kojoj se skočni izbornik puni sa imenom
+            i prezimenom korisnika moderatora,  kao i kod većine skripti za data handle koristi se js.
+        </p>
+        <h3>admCRUD.php</h3>
+        <p>
+            Ova skripta administratoru pruža pregled svih tablica iz baze podataka te klikom na određenu
+            karticu pristupa istoimenoj tablici u bazi podataka. Sama skripta ne sadrži tablice već samo
+            kao generator poveznica koje skripti admCRUDtable.php prosljeđuju podatke o odabranom entitetu
+            baze podataka.
+        </p>
+        <h3>admCURDtable.php</h3>
+        <p>
+            Ova skripta služi kao pomoćna, poziva se na klik ranije spomenute admCRUD.php objekta i za
+            prosljeđenje podatke koje je korisnik odabrao generira tablicu sa trenutnim podacima iz baze.
+            Opet sav daljnji data handle se odvija preko userCheck.js-a.
+        </p>
+        <h3>admFileUpload.php</h3>
+        <p>
+            Ova skripta ne prikazuje se nikada korisniku već se koristi za ajax komunikaciju sa userCheck.js
+            Skripta za get parametar sprema prosljeđene datoteke u /uploads mapu i vraća listu spremljenih
+            datoteka. U slučaju da nema get parametra skripta očekuje podatke o ranije obrađenim datotekama
+            i za iste postavlja upit na bazu podataka i zapisuje prosljeđene podatke.
+        </p>
+        <h3>admLog.php</h3>
+        <p>
+            Ova jednostavna skripta služi za prikaz dnevnika svih aktivnosti koje se događaju na stranici.
+            Postavlja se upit na bazu po entitetu "log" i ispisuju se svi podaci koji su dostupni.
+        </p>
+        <h3>admStatistic.php</h3>
+        <p>
+           Namjena ove skripte je da administratoru pokazuje statistiku potrošenih bodova, prvo tabličnim
+            prikazom a nakon toga grafikon na canvas elementu. Podaci u tablici dolaze od strane SQL upita
+            koji je postavljen nad bazom. Ostatak podataka dolazi preko userCheck.js.
+        </p>
+        <h3>admUserLock.php</h3>
+        <p>
+            Ovu skriptu koristi administrator kako bi imao pregled na statusom korisnika i kontrolu nad
+            istim. Tablični podaci se preuzimaju putem SQL upita nad bazom dok se daljnje ažuriranje
+            odvija putem userCheck.js.
+        </p>
+        <h3>aktivacija.php</h3>
+        <p>
+            Ova skripta služi za aktivaciju korisnika nakon registracije na sustav. Nakon što skripta
+            zaprimi GET parametar "aktivacijski kod" putem SQL upita se ispituje postoji li taj kod u bazi
+            podataka. Ovisno o rezultatu upita račun se aktivira ili ne i vraća poruku korisniku.
+        </p>
+        <h3>baza.php</h3>
+        <p>
+            Navedena skripta ima jednostavne funkcije DML-a koje se koriste za manipuliranje sa podacima iz baze podataka.
+            Neke od funkcija su selectDB, updatDB, spojiDB iz kojih dobivamo osnovne podatke zatražene upitom.
+        </p>
+        <h3>database_log.php</h3>
+        <p>Ovo je skripta koja sadrži funkcije za upis u log baze podataka koje za prosljeđene podatke
+            upisuju to u log baze podataka.</p>
+        <h3>index.php</h3>
+        <p>Na ovoj skripti prikazuju se kategorije koje se nalaze u bazi i imaju dodjeljene prozivode.
+            Klikom na određenu kategoriju prikazuju se top 3 najrezervrianije usluge.
+        </p>
+        <h3>index_signed.php</h3>
+        <p></p>
+        <h3>logout.php</h3>
+        <p>Jednostavna skripa koja služi izričito za uništavanje sessije, tj. koristi se ukoliko korisnik na jednoj od
+            stranica stisne Odjava kako bi se odjavio iz aplikacija.
+        </p>
+        <h3>lostPass.php</h3>
+        <p>Ova skripta služi za dohvat zaboravljenog passworda korisnika</p>
+
+        <h3>modCoupons.php</h3>
+        <p>Ovom se skriptom koristi moderator kod kreiranja nove kupona i dodjele kategorije
+            trenutnoj kategoriji. Skripta prikazuje HTML formu u kojoj se skočni izbornik puni sa imenom
+            i prezimenom korisnika moderatora,  kao i kod većine skripti za data handle koristi se js.</p>
+        <h3>prijava.php</h3>
+        <p>Kako bi se mogli prijaviti u aplikaciju moramo proći navedeu skriptu. Svaki put kada korisnik krivo upiše lozinku povećava mu se
+            counter te ako više od tri puta pogriješi račun mu se ključa te mu više nije moguće pristupi dok administrator ne otključa.
+            Nadalje, pritiskom na checkbox stvara se cookie gdje se pamti korisničko ime kod sljedeće prijave. Nakon što se korisnik prijavi
+            stvara se sesija sa podacima o korisniku s kojom se dalje manipulira prema potrebi.</p>
+        <h3>registracija.php</h3>
+        <p>Skripta je kojoj se pristupa kao neregistriarani korisnik. Sastoji se od forme koja služi kao svojevrsan upitnik o podacima korisnika.
+            Nadalje, poneka polja kao korisnik se provjerava u bazi podataka je li postoji već korisnićko ime kao takvo. Lozinka, mail se provjeravaju je li odgovaraju određeno upisu, npr. lozinka moora imati jedno veliko slovo i jedan specijalan znak, i slično.</p>
+
+        <h3>userCheck.php</h3>
+        <p>Navedena skripa je glavna .js skripta u kojoj se pozivaju sve ajax-ove funkcije te koja u glavnini poziva skriptu userCheck.php te iz koje dobiva sve podatke koje
+            mora proslijediti nekoj od stranica koja je pozvala istu. Neke od funkcije koje se nalaze tamo su funkcije za like-anje i dislike-anje kategorija i
+            usluga, izradu tablica za statistike, provjera korisničkog imena, mailova i svih ostalih atributa. Sve se poziva na način da se pošalju vrijednosti
+            koje su preuzete iz raznovrsnih inputa, textarea ili nečeg sličnog tome.</p>
+        <h3>usrCoupons.php</h3>
+        <p></p>
+
+        <h1>HTML</h1>
+        <h3>dokumentacija.html</h3>
+        <p>Je dokument na kojem se trenutno nalazite i služi kao dokumentacija cijelog projekta</p>
+        <h3>o_autoru.php</h3>
+        <p>Dokument koji sadrži podatke o oautoru projekta zajedno sa slikom.</p>
+
+        <h1>JavaScript</h1>
+        <h3>admFileUpload.js</h3>
+        <p>Sadrži ajax koji komunicira sa istoimenom php skriptom. Unutar nje spremaju se podaci na svaku promjenu
+        input elemntu koji na klik ajax šalje php skripti koja po uspijehu vraća listu datoteka i poziva se drugi ajax poziv koji
+            služi za spremanje podataka o datotekama u bazu.
+        </p>
+        <h3>userCheck.js</h3>
+        <p>Navedena skripa je glavna .js skripta u kojoj se pozivaju sve ajax-ove funkcije te koja u glavnini poziva skriptu userCheck.php te iz koje dobiva sve podatke koje
+            mora proslijediti nekoj od stranica koja je pozvala istu. Neke od funkcije koje se nalaze tamo su funkcije za like-anje i dislike-anje kategorija i
+            usluga, izradu tablica za statistike, provjera korisničkog imena, mailova i svih ostalih atributa. Sve se poziva na način da se pošalju vrijednosti
+            koje su preuzete iz raznovrsnih inputa, textarea ili nečeg sličnog tome.</p>
+        <h3>matljesca.js</h3>
+        <p>Mala javascript skripa, koja radi provjere za registracijsku formu na korisničkoj strani, provjere poput korisnickog imena, emaila i slično.</p>
+    </div>
+
+</section>
+
+
+
+</body>
+</html>
